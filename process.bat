@@ -1,0 +1,4 @@
+@echo off
+"C:\Users\yashj\Downloads\ffmpeg-2025-05-12-git-8ce32a7cbb-full_build\ffmpeg-2025-05-12-git-8ce32a7cbb-full_build\bin\ffmpeg.exe" -f concat -safe 0 -i input.txt -c copy temp_concat.mp4
+"C:\Users\yashj\Downloads\ffmpeg-2025-05-12-git-8ce32a7cbb-full_build\ffmpeg-2025-05-12-git-8ce32a7cbb-full_build\bin\ffmpeg.exe" -i temp_concat.mp4 -i "Music/The Whispering Box.mp3" -i "Music/Shadows Never Sleep.mp3" -i "Music/Run Without Shadows.mp3" -filter_complex "[1:a]atrim=0:20,asetpts=PTS-STARTPTS[a1];[2:a]atrim=0:20,asetpts=PTS-STARTPTS[a2];[3:a]atrim=0:15.54,asetpts=PTS-STARTPTS[a3];[a1][a2][a3]concat=n=3:v=0:a=1[aout]" -map 0:v -map "[aout]" -c:v copy final_output.mp4
+del temp_concat.mp4 

@@ -1,0 +1,26 @@
+{
+    "ffmpeg_path": "ffmpeg",
+    "videos_dir": "Videos",
+    "music_dir": "Music",
+    "output_file": "final_output.mp4",
+    "cleanup_temp_files": true,
+    "video_files": [
+        "Shot1.mp4",
+        "Shot2.mp4",
+        "Shot3.mp4",
+        "Shot4_1.mp4",
+        "Shot4_2.mp4",
+        "Shot5.mp4",
+        "Shot6.mp4",
+        "Shot7.mp4",
+        "Shot8.mp4",
+        "Shot8_5.mp4",
+        "Shot9.mp4"
+    ],
+    "audio_files": [
+        "The Whispering Box.mp3",
+        "Shadows Never Sleep.mp3",
+        "Run Without Shadows.mp3"
+    ],
+    "audio_durations": [20, 20, 15.54]
+} 
